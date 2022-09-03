@@ -53,6 +53,12 @@ body{
     color:#858fad;
     letter-spacing: 2px;
 }
+#payMonth div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 h2{
     font-size: 40px;
     font-weight: 800;
@@ -68,9 +74,8 @@ input[type = "range"]{
     -webkit-appearance: none;
     width: 100%;
     height: 8px;
-    background: linear-gradient(90deg, rgb(221, 11, 11) 60%, rgb(214,214,214) 60% );
+    background: linear-gradient(90deg, rgb(16, 213, 194) 50%, rgb(234, 238, 251) 50% );
     border-radius: 10px;
-    border: 1px solid red;
     cursor: pointer;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
@@ -86,7 +91,7 @@ input[type = "range"]::-webkit-slider-thumb{
     width: 40px;
     border-radius: 50%;
     box-shadow: 1px 10px 15px 5px #a5f3eb ;
-    background-color:  hsl(174, 86%, 45%);
+    background-color:  #10d5c2;
     background-image: url(./images/icon-slider.svg);
     background-repeat: no-repeat;
     background-position: center;
