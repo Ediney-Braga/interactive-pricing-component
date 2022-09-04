@@ -10,11 +10,12 @@
 body{
     font-family: 'Manrope', sans-serif;
     background-image: url(./images/pattern-circles.svg), url(./images/bg-pattern.svg);
-    background-position:50% 50px, 0px 0px  ;
+    background-position: 50% 50px, -4px -134px;
     background-repeat: no-repeat, no-repeat;
     background-color: #eaeefb;
     text-align: center;
-}   
+    background-size: auto, contain;
+}
 
 #title h1{
     color:#293356;
@@ -105,6 +106,40 @@ input[type = "range"]::-webkit-slider-thumb{
     margin-top: 20px;
 }
 
+label:hover, input[type="checkbox"]{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    background-color: #b0bde4;
+    height: 20px;
+    width: 35px;
+    border-radius: 10px;
+    position: relative;
+}
+
+input:checked[type="checkbox"]{
+    background-color: #10d5c2;
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #eaeefb;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(0%, -50%);
+    transition: all 0.2s ease;
+}
+
+input:checked[type="checkbox"]::before{
+    left:18px
+}
+
 .payOff{
     background-color: #feece7 ;
     color: #ff8c66;
@@ -148,4 +183,8 @@ button{
     padding: 9px 35px;
     border-radius:30px ;
     font-size: 12px;
+}
+
+button:hover{
+    cursor: pointer;
 }
