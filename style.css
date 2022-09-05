@@ -31,7 +31,7 @@ body{
 
 #box{
     height: 400px;
-    width: 490px;
+    max-width: 490px;
     margin: 50px auto;
     border-radius:10px ;
     background-color: #ffffff;
@@ -78,8 +78,9 @@ input[type = "range"]{
     background: linear-gradient(90deg, rgb(16, 213, 194) 50%, rgb(234, 238, 251) 50% );
     border-radius: 10px;
     cursor: pointer;
-    -webkit-transition: 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    opacity: .6;
 }
 
 input[type = "range"]:hover{
